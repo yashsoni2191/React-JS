@@ -1,0 +1,21 @@
+(1) - What is React - Js ?
+
+Ans -  React Js is a javascript library. It is use to create UI(User Interface). It is developed by Jordan Valke in 2011. He was working for facebook. React is a open source langauge.
+
+(2) - Advantage of React -Js ?
+
+Ans - 
+
+	(i) - It is use in single page application
+	(ii) - It is component base coding 
+	(iii) - React has V irtual DOM and Actual DOM
+
+(3) - Disadvantage of React -Js?
+
+Ans - 
+	(i) - It is Learning curve language
+	(ii) - 
+
+(4) -  What is the extention of React Js ?
+
+Ans - .jsx is extention of recat js and .jsx is to write combine code of html and js code.
