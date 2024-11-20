@@ -19,3 +19,5 @@ Ans -
 (4) -  What is the extention of React Js ?
 
 Ans - .jsx is extention of recat js and .jsx is to write combine code of html and js code.
+
+(5) - There are two types of command in React js :- 1 - npx, 2 - npm  
