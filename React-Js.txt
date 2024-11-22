@@ -1,4 +1,4 @@
-(1) - What is React - Js ?
+(1) - WhatisReact-Js?
 
 Ans -  React Js is a javascript library. It is use to create UI(User Interface). It is developed by Jordan Valke in 2011. He was working for facebook. React is a open source langauge.
 
@@ -32,4 +32,6 @@ Ans - Components are independent and reusable bits of code. They serve the same 
 
 Ans - Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed. Hooks are a function which is used with functional components to handle and manage the states and side-effects. So state is mutable or changeable.
 
-(9) - 
+(9) - What is Props?
+
+Ans - Props is an object
