@@ -18,7 +18,7 @@ Ans -
 
 (4) -  What is the extention of React Js ?
 
-Ans - .jsx is extention of recat js and .jsx is to write combine code of html and js code.
+Ans - .jsx is extention of react js and .jsx is to write combine code of html and js code.
 
 (5) - There are two types of command in React js :- 1 - npx, 2 - npm 
 
@@ -28,9 +28,11 @@ Ans - .jsx is extention of recat js and .jsx is to write combine code of html an
 
 Ans - Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML. Components come in two types, Class components and Function components.
 
+(8) - Lifecycle of Components :- Mounting, Updating, Unmounting
+
 (8) - What is Hooks?
 
-Ans - Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed. Hooks are a function which is used with functional components to handle and manage the states and side-effects. So state is mutable or changeable.
+Ans - Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed. Hooks are a function which is used with functional components to handle and manage the states and side-effects. So state is mutable or changeable. {useState} is Hooks which is use to manage the state and it is used in react
 
 (9) - What is Props?
 
