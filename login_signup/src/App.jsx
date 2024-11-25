@@ -5,14 +5,9 @@ import './App.css';
 import Header from './header';
 import Footer from './footer';
 
-
-
-
 function App() {
 
   let [state,setState]=useState("log")
-
-
 
   function Login(){
     return <div>  <Header/>
@@ -50,9 +45,9 @@ function App() {
     </div>
     <div className='signB'>
       <form action="">
-        <input type="text" placeholder='Enter Mobile nimber'/>
+        <input type="text" placeholder='Enter Mobile Number'/>
         <p>By continuing, you agree to Flipkart's <span className='text-[#2874F0]'>Terms of Use</span> and <span className='text-[#2874F0]'>Privacy Policy.</span></p>
-        <button className='submit'>COUNTINUE</button>
+        <button className='submit'>CONTINUE</button>
         <br/>
         <button className='signupbutton ' onClick={()=>setState("log")} >Existing User? log in</button>
        

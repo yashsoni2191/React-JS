@@ -11,7 +11,7 @@ function CreatAccount(props){
     <form action="">
       <input type="text" placeholder='Enter Mobile Number'/>
       <p>By continuing, you agree to Flipkart's <span className='text-[#2874F0]'>Terms of Use</span> and <span className='text-[#2874F0]'>Privacy Policy.</span></p>
-      <button className='submit'>COUNTINUE</button>
+      <button className='submit'>CONTINUE</button>
       <br/>
       <button className='signupbutton' onClick={()=>props.a}>Existing User? log in</button>
      
