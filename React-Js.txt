@@ -8,7 +8,7 @@ Ans -
 
 	(i) - It is use in single page application
 	(ii) - It is component base coding 
-	(iii) - React has V irtual DOM and Actual DOM
+	(iii) - React has Virtual DOM and Actual DOM
 
 (3) - Disadvantage of React -Js?
 
@@ -36,4 +36,12 @@ Ans - Hooks allow function components to have access to state and other React fe
 
 (9) - What is Props?
 
-Ans - Props is an object
+Ans - Props is an object which is a way to pass data from parent to child component
+
+(10) - Write Difference between class component and functional component
+
+Ans -(1) - Class Component
+
+	  i - 
+	  ii - Code Simplicity
+	  iii -
