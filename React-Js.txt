@@ -36,7 +36,7 @@ Ans - Hooks allow function components to have access to state and other React fe
 
 (9) - What is Props?
 
-Ans - Props is an object which is a way to pass data from parent to child component
+Ans - Props is an object which is a way to pass data from parent to child component.
 
 (10) - Write Difference between class component and functional component
 
@@ -45,3 +45,8 @@ Ans -(1) - Class Component
 	  i - 
 	  ii - Code Simplicity
 	  iii -
+
+(9) - Types of Hooks:-
+
+	i - useState
+	ii - useEffect :- it is use to handle side-effects
