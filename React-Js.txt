@@ -49,4 +49,14 @@ Ans -(1) - Class Component
 (9) - Types of Hooks:-
 
 	i - useState
-	ii - useEffect :- it is use to handle side-effects
+	ii - useEffect
+	iii - useRef
+
+
+(10) - Which tag is use in react but not visible in html element?
+
+Ans - React.Fragment(<></>) 
+
+(11) - Difference between Controlld component and Uncontrolled component
+
+Ans - Controlled Component :- The 
