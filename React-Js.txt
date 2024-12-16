@@ -60,3 +60,11 @@ Ans - React.Fragment(<></>)
 (11) - Difference between Controlld component and Uncontrolled component
 
 Ans - Controlled Component :- The 
+
+(12) - What is object.key?
+
+Ans - Object.key is use in the array of form which keep key outside of the object.
+
+(13) - What is HOC ?
+
+Ans - HOC(Higher Order Components) means a component which takes another component as a Props and returns different component. And takes a component as an input and give a component as an output.
