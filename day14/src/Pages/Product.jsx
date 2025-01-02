@@ -1,19 +1,19 @@
-import React from "react";
-// import './Product.css'
-import { useState } from "react";
-import { useEffect } from "react";
-// import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import './Product.css';
+import { useNavigate } from "react-router-dom";
 
 function Product() {
   const [form, setform] = useState({
     Title: "",
-    ImageURL: ""
+    ImageURL: "",
   });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setform({ ...form, [name]: value });
   };
+
+  const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -27,34 +27,42 @@ function Product() {
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
+        navigate("/Cart")
       })
       .catch((err) => {
         console.log(err);
       });
 
-      setform({
-        Title: "",
-        ImageURL: "",
-      })
+    setform({
+      Title: "",
+      ImageURL: "",
+    });
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Title"
-          name="Title"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="ImageURL"
-          placeholder="ImageURL"
-          onChange={handleChange}
-         />
-        <input type="submit" />
-      </form>
+    <div className="product-container">
+      <div className="product-form-container">
+        <h2 className="form-title">Add a New Product</h2>
+        <form onSubmit={handleSubmit} className="product-form">
+          <input
+            type="text"
+            placeholder="Title"
+            name="Title"
+            value={form.Title}
+            onChange={handleChange}
+            className="form-input"
+          />
+          <input
+            type="text"
+            name="ImageURL"
+            placeholder="Image URL"
+            value={form.ImageURL}
+            onChange={handleChange}
+            className="form-input"
+          />
+          <button type="submit" className="submit-btn">Add Product</button>
+        </form>
+      </div>
     </div>
   );
 }

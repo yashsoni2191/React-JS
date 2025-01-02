@@ -1,30 +1,88 @@
-/* form {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4b79a1, #2c3e50, #1abc9c);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-input[type="submit"] {
+  .signup-card {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
     width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .signup-title {
+    color: #f4c542;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-family: 'Cursive', sans-serif;
+    font-weight: bold;
+  }
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px solid #f4c542;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #f4c542;
+    box-shadow: 0 0 8px rgba(244, 197, 66, 0.8);
+  }
+
+  .submit-btn {
+    background-color: #f4c542;
     color: white;
     border: none;
-    border-radius: 4px;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
     cursor: pointer;
-}
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d1a03d;
+    transform: scale(1.05);
+  }
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
-} */
+  @media (max-width: 768px) {
+    .signup-card {
+      padding: 30px;
+      max-width: 90%;
+    }
+  
+    .signup-title {
+      font-size: 1.6rem;
+    }
+  
+    .form-input, .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  

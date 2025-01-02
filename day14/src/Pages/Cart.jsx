@@ -1,12 +1,10 @@
-import React from "react";
-// import './Cart.css'
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import './Cart.css';
 
 function Cart() {
-
   const [arr, setarr] = useState([]);
+  
   useEffect(() => {
     fetch(`http://localhost:3000/products`)
       .then((res) => res.json())
@@ -17,6 +15,7 @@ function Cart() {
         console.log(err);
       });
   }, [arr]);
+
   const handleDelete = (id) => {
     fetch(`http://localhost:3000/products/${id}`, {
       method: "DELETE",
@@ -31,24 +30,22 @@ function Cart() {
   };
 
   return (
-    <div>
+    <div className="cart-container">
       {arr.map((el) => (
-        <div key={el.id}>
-          <h1>{el.Title}</h1>
-          <img src={el.ImageURL} alt={el.Title} height="200px" width="200px" />
-          <br />
-          <button>
-            {" "}
-            <Link to={`/editProduct/${el.id}`}>Edit</Link>
-          </button>
-
-          <button
-            onClick={() => {
-              handleDelete(el.id);
-            }}
-          >
-            Delete
-          </button>
+        <div key={el.id} className="product-card">
+          <img src={el.ImageURL} alt={el.Title} className="product-image" />
+          <h2 className="product-title">{el.Title}</h2>
+          <div className="button-group">
+            <button className="edit-btn">
+              <Link to={`/editProduct/${el.id}`} className="btn-link">Edit</Link>
+            </button>
+            <button
+              onClick={() => handleDelete(el.id)}
+              className="delete-btn"
+            >
+              Delete
+            </button>
+          </div>
         </div>
       ))}
     </div>

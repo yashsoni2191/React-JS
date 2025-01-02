@@ -1,5 +1,43 @@
-.active{
-    border: 1px solid red;
-    background-color: rgba(0, 255, 255, 0.678);
-    border-radius: 30%;
-}
+.bg-gradient-custom {
+    background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+ @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .navbar {
+    padding: 1rem 2rem;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link {
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #f4c542; 
+    transform: scale(1.1);
+  }
+
+  .navbar-toggler-icon {
+    background-color: #f4c542; 
+  }
+  
+  .navbar-brand {
+    font-family: 'Cursive', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-brand:hover {
+    color: #f4c542;
+  }
+  

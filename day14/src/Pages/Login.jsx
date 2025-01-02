@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import './Login.css'
 import { useNavigate } from "react-router-dom";
+import './Login.css';
 
 function Login() {
   const [form, setForm] = useState({
@@ -21,22 +21,17 @@ function Login() {
       .then((res) => res.json())
       .then((Res) => {
         if (Res.length > 0) {
-          if (Res[0].password == form.password) {
-            alert("login Successfull");
-
+          if (Res[0].password === form.password) {
+            alert("Login Successful");
             navigate("/");
-            console.log(Res);
             localStorage.setItem("inLogin", "true");
           } else {
             alert("Wrong Password");
-            localStorage.setItem("inLogin")
           }
         } else {
           alert("User not Registered");
-          localStorage.setItem("inLogin")
         }
       })
-
       .catch((err) => {
         console.log(err);
       });
@@ -48,24 +43,31 @@ function Login() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="email"
-          placeholder="Enter email"
-          value={form.email}
-          onChange={handleInputChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Enter password"
-          value={form.password}
-          onChange={handleInputChange}
-        />
-        <button type="submit">Signup</button>
-      </form>
+    <div className="login-container">
+      <div className="login-card">
+        <h2 className="login-title">Login</h2>
+        <form onSubmit={handleSubmit} className="login-form">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter email"
+            value={form.email}
+            onChange={handleInputChange}
+            className="form-input"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            value={form.password}
+            onChange={handleInputChange}
+            className="form-input"
+            required
+          />
+          <button type="submit" className="submit-btn">Login</button>
+        </form>
+      </div>
     </div>
   );
 }

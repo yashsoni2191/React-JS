@@ -1,68 +1,76 @@
-    import React, { useEffect, useState } from "react";
-    // import './EditProduct.css'
-    import { useNavigate, useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import './EditProduct.css';
 
-    function EditProduct() {
-    const { id } = useParams();
-    const [form, setForm] = useState({
-        Title: "",
-        ImageURL: "",
-    });
+function EditProduct() {
+  const { id } = useParams();
+  const [form, setForm] = useState({
+    Title: "",
+    ImageURL: "",
+  });
 
-    const navigate = useNavigate()
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/products/${id}`)
-        .then((res) => res.json())
-        .then((data) => setForm(data))
-        .catch((err) => console.log(err));
-    }, [id]);
+  useEffect(() => {
+    fetch(`http://localhost:3000/products/${id}`)
+      .then((res) => res.json())
+      .then((data) => setForm(data))
+      .catch((err) => console.log(err));
+  }, [id]);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setForm({ ...form, [name]: value });
-    };
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-        fetch(`http://localhost:3000/products/${id}`, {
-        method: "PUT",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(form),
-        })
-        .then((res) => res.json())
-        .then((res) => {
-            console.log(res);
-            navigate("/cart");
-        })
-        .catch((err)=>{
-            console.log(err);
-        })
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    return (
-        <div>
-        <form onSubmit={handleSubmit}>
-            <input
+    fetch(`http://localhost:3000/products/${id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res);
+        navigate("/cart");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
+  return (
+    <div className="edit-product-container">
+      <div className="edit-product-card">
+        <h2 className="edit-product-title">Edit Product</h2>
+        <form onSubmit={handleSubmit} className="edit-product-form">
+          <input
             type="text"
-            placeholder="Title"
+            placeholder="Product Title"
             name="Title"
             value={form.Title}
             onChange={handleChange}
-            />
-            <input
+            className="form-input"
+            required
+          />
+          <input
             type="text"
             name="ImageURL"
+            placeholder="Product Image URL"
             value={form.ImageURL}
-            placeholder="ImageURL"
             onChange={handleChange}
-            />
-            <input type="submit" />
+            className="form-input"
+            required
+          />
+          <button type="submit" className="submit-btn">Update Product</button>
         </form>
-        </div>
-    );
-    }
+      </div>
+    </div>
+  );
+}
 
-    export default EditProduct;
+export default EditProduct;

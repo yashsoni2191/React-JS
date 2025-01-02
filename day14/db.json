@@ -1,35 +1,11 @@
 {
   "username": [
     {
-      "id": "5a1d",
-      "username": "nojj",
-      "email": "ojkj",
-      "password": "kjk"
-    },
-    {
       "id": "ce8e",
       "username": "YashSonii21",
       "email": "yashsoni2191@gmail.com",
       "password": "12345"
-    },
-    {
-      "id": "62e1",
-      "username": "YashSonii21",
-      "email": "yashsoni2191@gmail.com",
-      "password": "12345"
-    },
-    {
-      "id": "0b51",
-      "username": "yashsagar94",
-      "email": "yashsoni2191@gmail.com",
-      "password": "456789"
     }
   ],
-  "products": [
-    {
-      "id": "29a3",
-      "Title": "Yash Sagar asjdasd",
-      "ImageURL": "https://th.bing.com/th/id/OIG1.wQ7nqzXG6LLji1s3MrOP"
-    }
-  ]
+  "products": []
 }
