@@ -51,6 +51,8 @@ Ans -(1) - Class Component
 	i - useState
 	ii - useEffect
 	iii - useRef
+	iv - useParams
+	iv - useNavigate
 
 
 (10) - Which tag is use in react but not visible in html element?
