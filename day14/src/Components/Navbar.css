@@ -25,6 +25,18 @@
     transform: scale(1.1);
   }
 
+  @media (max-width: 768px) {
+    .nav-link:hover{
+      transform: scale(1.0);
+    }
+  }
+
+  @media (max-width: 980px) {
+    .nav-link:hover{
+      transform: scale(1.0);
+    }
+  }
+
   .navbar-toggler-icon {
     background-color: #f4c542; 
   }
