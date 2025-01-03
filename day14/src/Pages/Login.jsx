@@ -17,7 +17,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/username?email=${form.email}`)
+    fetch(`https://form-product-validation.onrender.com/username?email=${form.email}`)
       .then((res) => res.json())
       .then((Res) => {
         if (Res.length > 0) {

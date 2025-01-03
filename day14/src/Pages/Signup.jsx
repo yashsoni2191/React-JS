@@ -18,7 +18,7 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/username`, {
+    fetch(`https://form-product-validation.onrender.com/username`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

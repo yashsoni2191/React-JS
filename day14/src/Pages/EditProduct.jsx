@@ -12,7 +12,7 @@ function EditProduct() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/products/${id}`)
+    fetch(`https://form-product-validation.onrender.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => setForm(data))
       .catch((err) => console.log(err));
@@ -26,7 +26,7 @@ function EditProduct() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch(`http://localhost:3000/products/${id}`, {
+    fetch(`https://form-product-validation.onrender.com/products/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

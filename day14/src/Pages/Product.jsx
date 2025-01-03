@@ -17,7 +17,7 @@ function Product() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch(`http://localhost:3000/products`, {
+    fetch(`https://form-product-validation.onrender.com/products`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
