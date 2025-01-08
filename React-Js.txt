@@ -70,3 +70,6 @@ Ans - Object.key is use in the array of form which keep key outside of the objec
 (13) - What is HOC ?
 
 Ans - HOC(Higher Order Components) means a component which takes another component as a Props and returns different component. And takes a component as an input and give a component as an output.
+
+(14) - Redux :- Redux is open-source js library, it is use to manage the state of application in centralised format.
+		why we use :- 
