@@ -5,7 +5,7 @@ import { INC, DEC } from "./actionType";
 let initial = {
   count: 0,
   count2 : 2,
-  count3 : 0
+  count3 : 2
 };
 
 export const reducer = (state = initial, { type, payload }) => {
