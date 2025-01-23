@@ -1,0 +1,20 @@
+What is React?
+
+React is a js library, it is developed by Jordan valke in 2011 he was working in facebook. For creating single page application and It is used to create reusable ui components and manage the states of web application efficiently. It allows developers to build dynamic and high- performance interface.
+
+Advantage and disadvantage of react?
+
+
+
+difference between state and props
+
+what is reconciliation
+
+what is hook
+
+what is usestate
+
+what is useeffect
+
+difference between usestate and useeffect
+
