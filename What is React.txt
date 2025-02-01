@@ -4,7 +4,9 @@ React is a js library, it is developed by Jordan valke in 2011 he was working in
 
 Advantage and disadvantage of react?
 
+What is jsx
 
+Difference between real dom and virtual
 
 difference between state and props
 
@@ -17,4 +19,42 @@ what is usestate
 what is useeffect
 
 difference between usestate and useeffect
+
+lifecycle of react component
+
+what is fragments in react
+
+Difference between package.json and package lock.json
+
+difference between client side and server side rendering
+
+what is prop drilling
+
+difference between pure and impure component
+
+difference between controlled and uncontrolled component
+
+what is ref
+
+what is hoc
+
+what is memoiasation
+
+difference between usememo and usecallback
+
+what are key in react
+
+what is redux
+
+difference between redux and context api
+
+define redux state flow
+
+what is difference between usenavigate and navigate component 
+
+what is redux thunk
+
+what is strict mode
+
+
 
